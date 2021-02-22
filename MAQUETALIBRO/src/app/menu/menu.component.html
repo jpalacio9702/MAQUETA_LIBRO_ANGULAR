@@ -1,0 +1,19 @@
+<nav ngxNavbarDynamicExpand class="navbar-light bg-light colorNav">
+    <h3>J&C Bookstore</h3><button class="navbar-toggler" type="button" (click)="collapse.toggle()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <ngx-navbar-collapse #collapse="ngxNavbarCollapse">
+        
+        <ul class="list nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a class="nav-link active" id="inicio-tab" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="sesion-tab" href="#">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="registrar-tab" href="#">Registrarse</a>
+            </li>
+        </ul>
+    </ngx-navbar-collapse>
+</nav>
